@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ronimee Patsy Gascon | Social Media Manager · Executive Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-wordmark" onclick="smoothScroll('hero'); return false;">
+        <span class="nav-wordmark-white">patfolio.</span><span class="nav-wordmark-gold">&nbsp;·</span>
+      </a>
+
+      <div class="desktop-only nav-links">
+        <a href="#hero"      class="nav-link active" onclick="smoothScroll('hero');      return false;">Home</a>
+        <a href="#about"     class="nav-link"         onclick="smoothScroll('about');     return false;">About</a>
+        <a href="#services"  class="nav-link"         onclick="smoothScroll('services');  return false;">Services</a>
+        <a href="#portfolio" class="nav-link"         onclick="smoothScroll('portfolio'); return false;">Portfolio</a>
+        <a href="#contact"   class="nav-link"         onclick="smoothScroll('contact');   return false;">Contact</a>
+      </div>
+
+      <a href="#contact" class="btn-gold desktop-only" style="padding:10px 24px;font-size:0.72rem;" onclick="smoothScroll('contact'); return false;">
+        Hire Me
+      </a>
+
+      <button class="hamburger mobile-only" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer">
+      <a href="#hero"      class="nav-link" onclick="smoothScroll('hero');      closeMobileMenu(); return false;">Home</a>
+      <a href="#about"     class="nav-link" onclick="smoothScroll('about');     closeMobileMenu(); return false;">About</a>
+      <a href="#services"  class="nav-link" onclick="smoothScroll('services');  closeMobileMenu(); return false;">Services</a>
+      <a href="#portfolio" class="nav-link" onclick="smoothScroll('portfolio'); closeMobileMenu(); return false;">Portfolio</a>
+      <a href="#contact"   class="nav-link" onclick="smoothScroll('contact');   closeMobileMenu(); return false;">Contact</a>
+      <a href="#contact" class="btn-gold" style="margin-top:0.5rem;width:100%;justify-content:center;display:flex;" onclick="smoothScroll('contact'); closeMobileMenu(); return false;">
+        Hire Me
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-grid-line" style="left:20%"></div>
+    <div class="hero-grid-line" style="left:40%"></div>
+    <div class="hero-grid-line" style="left:60%"></div>
+    <div class="hero-grid-line" style="left:80%"></div>
+    <div class="hero-grid-line" style="left:100%"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-ornament-lg"></div>
+    <div class="hero-ornament-sm"></div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="section-label">
+          <div class="section-label-line"></div>
+          <span class="section-label-text">Available for Hire</span>
+        </div>
+        <p class="hero-subtitle">Social Media Manager · General Virtual Assistant</p>
+        <h1 class="hero-h1">
+          <span>Ronimee</span>
+          <span>Patsy</span>
+          <span class="gold-line gold-text">Gascon</span>
+        </h1>
+        <div class="gold-divider">
+          <div class="gold-divider-line-l"></div>
+          <div class="gold-divider-diamond"></div>
+          <div class="gold-divider-line-r"></div>
+        </div>
+        <p class="hero-body">
+          Your reliable Virtual Assistant for organization, productivity, and online growth — helping your business run smoothly and efficiently.
+        </p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn-gold" onclick="smoothScroll('contact'); return false;"><span>✦</span> Hire Me Now</a>
+          <a href="#services" class="btn-outline" onclick="smoothScroll('services'); return false;">View Services</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">2+</div>
+            <div class="hero-stat-lbl">Years Experience</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">100%</div>
+            <div class="hero-stat-lbl">Client Satisfaction</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">4</div>
+            <div class="hero-stat-lbl">Core Services</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-frame-wrap">
+        <div class="hero-frame">
+          <div class="corner-accent tl"></div>
+          <div class="corner-accent tr"></div>
+          <div class="corner-accent bl"></div>
+          <div class="corner-accent br"></div>
+          <div class="hero-frame-inner hero-frame-inner--photo">
+            <img
+              src="images/profile.png"
+              alt="Ronimee Patsy Gascon"
+              onerror="this.style.display='none';"
+              style="width:100%;height:100%;object-fit:cover;display:block;opacity:1;filter:none;"
+            />
+          </div>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-num">2+</div>
+          <div class="hero-badge-lbl">Years Exp.</div>
+        </div>
+        <div class="hero-side-tag">
+          <span>Patfolio 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section id="about">
+    <div class="about-top-line"></div>
+    <div class="about-bottom-line"></div>
+
+    <div class="about-inner">
+      <div class="about-header anim-reveal">
+        <div class="section-label">
+          <div class="section-label-line"></div>
+          <span class="section-label-text">About Me</span>
+        </div>
+        <h2 class="section-heading">
+          The Person Behind<br>
+          <em style="font-style:italic;color:var(--gold);">the Work</em>
+        </h2>
+      </div>
+
+      <div class="about-body">
+        <!-- Bio -->
+        <div class="about-bio anim-reveal anim-delay-1">
+          <p class="about-quote">
+            Your go-to Virtual Assistant and Creative Designer for organized workflows, creative visuals, and business growth
+          </p>
+          <p class="about-body-text">
+            I’m a passionate Virtual Assistant and Creative Designer with a background in Information Technology, dedicated to helping businesses stay organized, efficient, and visually impactful. My journey started with a strong interest in technology and creativity, which inspired me to combine both skills into providing reliable virtual support and engaging digital solutions.
+
+I believe that great work comes from consistency, attention to detail, and genuine commitment. Whether it’s managing workflows, supporting daily operations, or creating creative content, I always aim to deliver results that help clients save time, stay productive, and grow confidently.
+
+What drives me most is the opportunity to support businesses behind the scenes while helping them build a professional and lasting online presence.
+
+          </p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
+            <a href="#contact" class="btn-gold" style="font-size:0.72rem;" onclick="smoothScroll('contact'); return false;">
+              Let's Connect →
+            </a>
+            <a href="https://drive.google.com/file/d/1pKWm-BBSpzEFncH00V7C1BY3cA4h8h1Z/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-outline" style="font-size:0.72rem;">
+              View My CV
+            </a>
+          </div>
+
+          <div class="about-skills">
+            <div class="skill-group">
+              <h4 class="skill-group-title">Hard Skills</h4>
+              <div class="skill-tags">
+                <span class="tag">Administrative Support</span>
+                <span class="tag">Email & Calendar Management</span>
+                <span class="tag">Social Media Management</span>
+                <span class="tag">Canva Graphic Design</span>
+                <span class="tag">Data Entry & File Organization</span>
+                <span class="tag">Task & Project Management</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Soft Skills</h4>
+              <div class="skill-tags">
+                <span class="tag">Teamwork</span>
+                <span class="tag">Creativity</span>
+                <span class="tag">Attention to Detail</span>
+                <span class="tag">Effective Communication</span>
+                <span class="tag">Critical Thinking</span>
+                <span class="tag">Time Management</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4 class="skill-group-title">Tools &amp; Software</h4>
+              <div class="skill-tags">
+                <span class="tag">Canva</span>
+                <span class="tag">Google Drive</span>
+                <span class="tag">Trello & Slack & Notion</span>
+                <span class="tag">Google Workspace</span>
+                <span class="tag">Jotform</span>
+                <span class="tag">Zoom</span>
+                <span class="tag">Meta Business Suite</span>
+                <span class="tag">Microsoft PowerPoint</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Details card -->
+        <div class="about-details anim-reveal anim-delay-2">
+          <div class="glass-card details-card">
+            <div class="details-card-bar"></div>
+            <h3 class="details-card-title">Personal Details</h3>
+            <div class="details-list">
+              <div class="detail-row">
+                <span class="detail-key">Full Name</span>
+                <span class="detail-val">Ronimee Patsy Gascon</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Location</span>
+                <span class="detail-val">Philippines</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Email</span>
+                <span class="detail-val">rnmp.va29@gmail.com</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">WhatsApp</span>
+                <span class="detail-val">+63 994 029 1043</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Profession</span>
+                <span class="detail-val">Social Media Manager · General Virtual Assistant </span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Education</span>
+                <span class="detail-val">Bachelor of Science in Information Technology — Western Institute of Technology, 2023-2024</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Experience</span>
+                <span class="detail-val">2+ Years in Virtual Assistance &amp; SMM</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Languages</span>
+                <span class="detail-val">English, Filipino</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Interests</span>
+                <span class="detail-val">I am interested in virtual assistance, productivity systems, creative design and branding, digital organization, social media growth strategies, technology and automation tools, and continuous learning to improve my skills.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES OVERVIEW
+  ═══════════════════════════════════════════ -->
+  <section id="services">
+    <div class="services-bg"></div>
+    <div class="services-inner">
+      <div class="services-header anim-reveal">
+        <div class="section-label" style="justify-content:center;">
+          <div class="section-label-line"></div>
+          <span class="section-label-text">What I Offer</span>
+        </div>
+        <h2 class="section-heading">Services <em style="font-style:italic;color:var(--gold);">Offered</em></h2>
+        <p class="services-sub">Click a service card to explore the full scope of each offering.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card anim-reveal" onclick="smoothScroll('admin')">
+          <div class="svc-card-top">
+            <span class="svc-icon">◈</span>
+            <span class="svc-num">01</span>
+          </div>
+          <h3 class="svc-title">Administrative Support</h3>
+          <p class="svc-tagline">Precision behind every operation.</p>
+          <p class="svc-short">Seamless back-office coordination so every part of your business runs with quiet efficiency.</p>
+          <div class="svc-explore-row">
+            <span class="svc-explore">Explore</span>
+            <span class="svc-arrow">→</span>
+          </div>
+        </div>
+
+        <div class="service-card anim-reveal anim-delay-1" onclick="smoothScroll('data')">
+          <div class="svc-card-top">
+            <span class="svc-icon">◉</span>
+            <span class="svc-num">02</span>
+          </div>
+          <h3 class="svc-title">Data Entry &amp; File Management</h3>
+          <p class="svc-tagline">Order in every detail.</p>
+          <p class="svc-short">Meticulous data handling and structured file systems that eliminate chaos and save hours.</p>
+          <div class="svc-explore-row">
+            <span class="svc-explore">Explore</span>
+            <span class="svc-arrow">→</span>
+          </div>
+        </div>
+
+        <div class="service-card anim-reveal anim-delay-2" onclick="smoothScroll('social')">
+          <div class="svc-card-top">
+            <span class="svc-icon">◎</span>
+            <span class="svc-num">03</span>
+          </div>
+          <h3 class="svc-title">Social Media Management</h3>
+          <p class="svc-tagline">Your story, amplified.</p>
+          <p class="svc-short">Strategic presence-building that grows your audience, strengthens your brand, and drives real engagement.</p>
+          <div class="svc-explore-row">
+            <span class="svc-explore">Explore</span>
+            <span class="svc-arrow">→</span>
+          </div>
+        </div>
+
+        <div class="service-card anim-reveal anim-delay-3" onclick="smoothScroll('design')">
+          <div class="svc-card-top">
+            <span class="svc-icon">◇</span>
+            <span class="svc-num">04</span>
+          </div>
+          <h3 class="svc-title">Graphic Design via Canva</h3>
+          <p class="svc-tagline">Visuals that command attention.</p>
+          <p class="svc-short">Eye-catching designs that communicate your brand's story and make your audience stop scrolling.</p>
+          <div class="svc-explore-row">
+            <span class="svc-explore">Explore</span>
+            <span class="svc-arrow">→</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICE DETAIL: ADMIN (deep bg, normal)
+  ═══════════════════════════════════════════ -->
+  <section id="admin" class="service-detail bg-deep">
+    <div style="position:absolute;inset:0;background-image:radial-gradient(circle at 75% 50%,rgba(26,46,66,0.333) 0%,transparent 60%);pointer-events:none;"></div>
+    <div class="sd-inner anim-reveal">
+      <div class="sd-visual" style="background:linear-gradient(145deg,#1A2E42,rgba(8,17,28,0.8));">
+        <span class="sd-visual-icon">◈</span>
+        <p class="sd-visual-lbl">These are my work examples</p>
+        <div class="sd-img-grid">
+          <div class="sd-img-placeholder"><img src="images/admin1.png" alt="Admin project 1" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+          <div class="sd-img-placeholder"><img src="images/admin2.png" alt="Admin project 2" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+          <div class="sd-img-placeholder"><img src="images/admin3.png" alt="Admin project 3" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+          <div class="sd-img-placeholder"><img src="images/admin4.png" alt="Admin project 4" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+        </div>
+        <div class="sd-visual-bar"></div>
+      </div>
+      <div class="sd-copy">
+        <div class="section-label">
+          <div class="section-label-line"></div>
+          <span class="section-label-text">Service Detail</span>
+        </div>
+        <p class="sd-num-tag">01 / Precision behind every operation.</p>
+        <h2 class="section-heading sm">Administrative Support</h2>
+        <p class="sd-body">Reliable administrative support that keeps daily operations organized, efficient, and running smoothly behind the scenes. I assist with task coordination, document preparation, scheduling, communication management, and other essential administrative duties to help business owners stay focused on their priorities. With strong attention to detail, time management, and organization skills, I provide dependable support that improves workflow, increases productivity, and ensures tasks are completed accurately and on time.</p>
+        <div class="sd-tasks">
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Task management &amp; prioritization</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Meeting coordination</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Scheduling &amp; calendar management</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Travel arrangement</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Email organization &amp; filtering</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Document preparation &amp; formatting</span></div>
+        </div>
+        <a href="#contact" class="btn-gold" onclick="smoothScroll('contact'); return false;">Book This Service →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE DETAIL: DATA (navy bg, flipped) -->
+  <section id="data" class="service-detail bg-navy">
+    <div style="position:absolute;inset:0;background-image:radial-gradient(circle at 25% 50%,rgba(26,52,40,0.333) 0%,transparent 60%);pointer-events:none;"></div>
+    <div class="sd-inner flip anim-reveal">
+      <div class="sd-visual" style="background:linear-gradient(145deg,#1A3428,rgba(8,17,28,0.8));">
+        <span class="sd-visual-icon">◉</span>
+        <p class="sd-visual-lbl">These are my work examples</p>
+        <div class="sd-img-grid">
+          <div class="sd-img-placeholder"><img src="images/data1.png" alt="Data project 1" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+          <div class="sd-img-placeholder"><img src="images/data2.png" alt="Data project 2" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+          <div class="sd-img-placeholder"><img src="images/data2.png" alt="Data project 3" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+          <div class="sd-img-placeholder"><img src="images/data1.png" alt="Data project 4" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+        </div>
+        <div class="sd-visual-bar"></div>
+      </div>
+      <div class="sd-copy">
+        <div class="section-label">
+          <div class="section-label-line"></div>
+          <span class="section-label-text">Service Detail</span>
+        </div>
+        <p class="sd-num-tag">02 / Order in every detail.</p>
+        <h2 class="section-heading sm">Data Entry &amp; File Management</h2>
+        <p class="sd-body">Accurate and organized data management solutions designed to keep your business operations efficient and stress-free. I provide reliable data entry, file organization, spreadsheet management, and digital record keeping to ensure information is easy to access, updated, and well-structured. By maintaining organized systems and paying close attention to detail, I help businesses reduce errors, improve productivity, and save valuable time that can be focused on growth and daily operations.</p>
+        <div class="sd-tasks">
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Excel &amp; Google Sheets work</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">File organization systems</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Database management</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">PDF conversion &amp; editing</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Data cleaning &amp; validation</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Document organization</span></div>
+        </div>
+        <a href="#contact" class="btn-gold" onclick="smoothScroll('contact'); return false;">Book This Service →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE DETAIL: SOCIAL (deep bg, normal) -->
+  <section id="social" class="service-detail bg-deep">
+    <div style="position:absolute;inset:0;background-image:radial-gradient(circle at 75% 50%,rgba(42,26,46,0.333) 0%,transparent 60%);pointer-events:none;"></div>
+    <div class="sd-inner anim-reveal">
+      <div class="sd-visual" style="background:linear-gradient(145deg,#2A1A2E,rgba(8,17,28,0.8));">
+        <span class="sd-visual-icon">◎</span>
+        <p class="sd-visual-lbl">These are my work examples</p>
+        <div class="sd-img-grid">
+          <div class="sd-img-placeholder"><img src="images/social1.png" alt="Social Media project 1" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+          <div class="sd-img-placeholder"><img src="images/social2.png" alt="Social Media project 2" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+          <div class="sd-img-placeholder"><img src="images/social3.png" alt="Social Media project 3" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+          <div class="sd-img-placeholder"><img src="images/social4.png" alt="Social Media project 4" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+        </div>
+        <div class="sd-visual-bar"></div>
+      </div>
+      <div class="sd-copy">
+        <div class="section-label">
+          <div class="section-label-line"></div>
+          <span class="section-label-text">Service Detail</span>
+        </div>
+        <p class="sd-num-tag">03 / Your story, amplified.</p>
+        <h2 class="section-heading sm">Social Media Management</h2>
+        <p class="sd-body">Professional social media management focused on building a strong online presence, increasing audience engagement, and helping brands connect effectively with their target market. I assist with content scheduling, page management, audience interaction, basic content creation, and maintaining a consistent brand image across social platforms. By combining creativity, organization, and attention to trends, I help businesses improve visibility, strengthen customer relationships, and create a more engaging digital presence.
+</p>
+        <div class="sd-tasks">
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Facebook page management</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Instagram scheduling</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Content planning &amp; calendar</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Post organization</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Caption writing assistance</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Community engagement support</span></div>
+        </div>
+        <a href="#contact" class="btn-gold" onclick="smoothScroll('contact'); return false;">Book This Service →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE DETAIL: DESIGN (navy bg, flipped) -->
+  <section id="design" class="service-detail bg-navy">
+    <div style="position:absolute;inset:0;background-image:radial-gradient(circle at 25% 50%,rgba(42,32,16,0.333) 0%,transparent 60%);pointer-events:none;"></div>
+    <div class="sd-inner flip anim-reveal">
+      <div class="sd-visual" style="background:linear-gradient(145deg,#2A2010,rgba(8,17,28,0.8));">
+        <span class="sd-visual-icon">◇</span>
+        <p class="sd-visual-lbl">These are my work examples</p>
+        <div class="sd-img-grid">
+          <div class="sd-img-placeholder"><img src="images/design1.png" alt="Design project 1" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+          <div class="sd-img-placeholder"><img src="images/design2.png" alt="Design project 2" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+          <div class="sd-img-placeholder"><img src="images/design3.jpeg" alt="Design project 3" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+          <div class="sd-img-placeholder"><img src="images/design4.png" alt="Design project 4" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='🖼';" /></div>
+        </div>
+        <div class="sd-visual-bar"></div>
+      </div>
+      <div class="sd-copy">
+        <div class="section-label">
+          <div class="section-label-line"></div>
+          <span class="section-label-text">Service Detail</span>
+        </div>
+        <p class="sd-num-tag">04 / Visuals that command attention.</p>
+        <h2 class="section-heading sm">Graphic Design via Canva</h2>
+        <p class="sd-body">Professional and visually engaging designs that help businesses strengthen their online presence and capture their audience’s attention. I create clean, modern, and purpose-driven graphics using Canva for social media, marketing materials, presentations, and other digital content. My goal is to deliver designs that not only look appealing but also communicate your brand message clearly, increase engagement, and leave a lasting impression on your audience.</p>
+        <div class="sd-tasks">
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Social media graphics</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Posters &amp; flyers</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Event graphics</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Promotional materials</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Branding visuals</span></div>
+          <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Story &amp; banner templates</span></div>
+        </div>
+        <a href="#contact" class="btn-gold" onclick="smoothScroll('contact'); return false;">Book This Service →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PORTFOLIO
+  ═══════════════════════════════════════════ -->
+  <section id="portfolio">
+    <div class="portfolio-top-line"></div>
+    <div class="portfolio-bottom-line"></div>
+    <div class="portfolio-inner">
+      <div class="portfolio-header anim-reveal">
+        <div class="section-label" style="justify-content:center;">
+          <div class="section-label-line"></div>
+          <span class="section-label-text">My Work</span>
+        </div>
+        <h2 class="section-heading">Selected <em style="font-style:italic;color:var(--gold);">Portfolio</em></h2>
+        <p class="portfolio-sub">A curated selection of projects across social media, design, and administrative work.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card" style="background:#1A2D3F;">
+          <img src="images/portfolio1.jpg" alt="Instagram Brand Kit" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+        <div class="portfolio-card" style="background:#1A3428;">
+          <img src="images/portfolio2.png" alt="Event Flyer Campaign" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+        <div class="portfolio-card" style="background:#2A1A2E;">
+          <img src="images/portfolio3.png" alt="Content Calendar Q4" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+        <div class="portfolio-card" style="background:#2A2418;">
+          <img src="images/portfolio4.png" alt="Monthly Report Design" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+        <div class="portfolio-card" style="background:#1A2A3A;">
+          <img src="images/portfolio5.png" alt="Facebook Ad Graphics" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+        <div class="portfolio-card" style="background:#201E14;">
+          <img src="images/portfolio6.png" alt="Business Branding Set" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+        <div class="portfolio-card" style="background:#172230;">
+          <img src="images/portfolio7.png" alt="Social Media Strategy" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+        <div class="portfolio-card" style="background:#1E1C12;">
+          <img src="images/portfolio8.png" alt="Email Campaign Design" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+      </div>
+
+      <div class="portfolio-footer">
+        <a href="#contact" class="btn-outline" onclick="smoothScroll('contact'); return false;">Start a Project Together →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section id="testimonials">
+    <div class="testimonials-bg"></div>
+    <div class="testimonials-inner">
+      <div class="testimonials-header anim-reveal">
+        <div class="section-label" style="justify-content:center;">
+          <div class="section-label-line"></div>
+          <span class="section-label-text">Client Reviews</span>
+        </div>
+        <h2 class="section-heading">What Clients <em style="font-style:italic;color:var(--gold);">Say</em></h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="glass-card testimonial-card anim-reveal">
+          <div class="testimonial-top-line"></div>
+          <div class="testimonial-stars">
+            <span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span>
+          </div>
+          <div class="testimonial-quote-mark">"</div>
+          <p class="testimonial-text">Ronimee transformed our social media presence in two months. Incredibly organized, proactive, and always delivers on time. An absolute professional.</p>
+          <div class="gold-divider"><div class="gold-divider-line-l"></div><div class="gold-divider-diamond"></div><div class="gold-divider-line-r"></div></div>
+          <div style="margin-top:1rem;">
+            <p class="testimonial-name">Ronel Magallanes</p>
+            <p class="testimonial-role">Onel Barbershop , Manila</p>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card anim-reveal anim-delay-2">
+          <div class="testimonial-top-line"></div>
+          <div class="testimonial-stars">
+            <span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span>
+          </div>
+          <div class="testimonial-quote-mark">"</div>
+          <p class="testimonial-text">Having Ronimee as my Executive Assistant was a game-changer. She manages my calendar, emails, and tasks flawlessly. My productivity doubled.</p>
+          <div class="gold-divider"><div class="gold-divider-line-l"></div><div class="gold-divider-diamond"></div><div class="gold-divider-line-r"></div></div>
+          <div style="margin-top:1rem;">
+            <p class="testimonial-name">Emee Talagon</p>
+            <p class="testimonial-role">Yo Honey &amp; CEO</p>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card anim-reveal anim-delay-4">
+          <div class="testimonial-top-line"></div>
+          <div class="testimonial-stars">
+            <span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span>
+          </div>
+          <div class="testimonial-quote-mark">"</div>
+          <p class="testimonial-text">The Canva designs she created were stunning — on-brand, polished, and always delivered fast. She truly understands what clients need.</p>
+          <div class="gold-divider"><div class="gold-divider-line-l"></div><div class="gold-divider-diamond"></div><div class="gold-divider-line-r"></div></div>
+          <div style="margin-top:1rem;">
+            <p class="testimonial-name">Eunice Tortocion</p>
+            <p class="testimonial-role">E-commerce</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="contact-glow"></div>
+    <div class="contact-top-line"></div>
+    <div class="contact-inner">
+
+      <div class="contact-left anim-reveal">
+        <div class="section-label">
+          <div class="section-label-line"></div>
+          <span class="section-label-text">Get In Touch</span>
+        </div>
+        <h2 class="section-heading">
+          Ready to Work<br>
+          <em class="contact-heading-em">Together?</em>
+        </h2>
+        <p class="contact-body">
+          Let's grow your business. Whether you need organized assistance, strategic social media content, or beautiful graphics — I'm ready.
+        </p>
+
+        <div class="contact-info-row">
+          <div class="contact-info-icon">✉</div>
+          <div>
+            <p class="contact-info-label">Email</p>
+            <p class="contact-info-val">rnmp.va29@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-info-row">
+          <div class="contact-info-icon">◎</div>
+          <div>
+            <p class="contact-info-label">Location</p>
+            <p class="contact-info-val">Philippines</p>
+          </div>
+        </div>
+        <div class="contact-info-row">
+          <div class="contact-info-icon">◷</div>
+          <div>
+            <p class="contact-info-label">Availability</p>
+            <p class="contact-info-val">Mon – Fri, 8AM – 6PM PHT</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-right anim-reveal anim-delay-2">
+        <!-- Success state -->
+        <div class="form-success" id="form-success">
+          <div class="form-success-bar"></div>
+          <div class="form-success-icon">✦</div>
+          <h3 class="form-success-title">Message Sent!</h3>
+          <p class="form-success-text">Thank you for reaching out. I'll get back to you within 24 hours.</p>
+          <button class="btn-gold" onclick="resetForm()">Send Another →</button>
+        </div>
+
+        <!-- Form -->
+        <form class="glass-card contact-form" id="contact-form" onsubmit="submitForm(); return false;">
+          <div class="contact-form-bar"></div>
+          <div class="form-row">
+            <div class="form-field">
+              <input class="input-field" id="field-name" name="name" type="text" placeholder="Your Name">
+              <p class="field-error" id="err-name"></p>
+            </div>
+            <div class="form-field">
+              <input class="input-field" id="field-email" name="email" type="email" placeholder="Your Email">
+              <p class="field-error" id="err-email"></p>
+            </div>
+          </div>
+          <div class="form-field-full">
+            <input class="input-field" id="field-subject" name="subject" type="text" placeholder="Subject">
+            <p class="field-error" id="err-subject"></p>
+          </div>
+          <div class="form-field-msg">
+            <textarea class="input-field" id="field-message" name="message" placeholder="Your message..." rows="6" style="resize:vertical;"></textarea>
+            <p class="field-error" id="err-message"></p>
+          </div>
+          <input type="hidden" name="_captcha" value="false">
+          <p class="form-error" id="form-error">Something went wrong. Please email me directly.</p>
+          <button class="btn-gold" id="submit-btn" type="submit" style="width:100%;justify-content:center;">
+            Send Message →
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-wordmark">Patfolio<span class="footer-wordmark-dot">&nbsp;·</span></div>
+          <p class="footer-role">Social Media Manager · General Virtual Assistant/p>
+          <p class="footer-tagline">Helping businesses stay organized, grow online, and achieve real results.</p>
+        </div>
+        <div class="footer-nav">
+          <h4 class="footer-col-title">Navigate</h4>
+          <a href="#hero"      class="nav-link" onclick="smoothScroll('hero');      return false;">Home</a>
+          <a href="#about"     class="nav-link" onclick="smoothScroll('about');     return false;">About</a>
+          <a href="#services"  class="nav-link" onclick="smoothScroll('services');  return false;">Services</a>
+          <a href="#portfolio" class="nav-link" onclick="smoothScroll('portfolio'); return false;">Portfolio</a>
+          <a href="#contact"   class="nav-link" onclick="smoothScroll('contact');   return false;">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4 class="footer-col-title">Contact</h4>
+          <p class="footer-email">rnmp.va29@gmail.com</p>
+          <p class="footer-note" style="font-size:0.82rem;margin-top:0.4rem;opacity:0.85;">Form submissions are sent directly to this email.</p>
+          <p class="footer-location">Philippines</p>
+          <a href="#contact" class="btn-gold" style="font-size:0.68rem;padding:10px 22px;" onclick="smoothScroll('contact'); return false;">Hire Me</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Ronimee Patsy Gascon. All rights reserved.</p>
+        <p class="footer-copy">Crafted with precision &amp; purpose.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       JAVASCRIPT
+  ═══════════════════════════════════════════ -->
+  <script>
+    /* ─── Smooth scroll ─────────────────────── */
+    function smoothScroll(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    /* ─── Navbar scroll behavior ────────────── */
+    const navbar = document.getElementById('navbar');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = ['hero','about','services','admin','data','social','design','portfolio','testimonials','contact'];
+
+    function updateNav() {
+      const scrollY = window.scrollY;
+
+      // Scrolled class
+      if (scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      // Active link
+      let current = 'hero';
+      for (const id of sections) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= 130) current = id;
+      }
+
+      navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === '#' + current) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateNav, { passive: true });
+
+    /* ─── Hamburger / mobile menu ───────────── */
+    function toggleMenu() {
+      const btn    = document.getElementById('hamburger');
+      const drawer = document.getElementById('mobile-drawer');
+      btn.classList.toggle('open');
+      drawer.classList.toggle('open');
+    }
+    function closeMobileMenu() {
+      document.getElementById('hamburger').classList.remove('open');
+      document.getElementById('mobile-drawer').classList.remove('open');
+    }
+
+    /* ─── Intersection observer (reveal) ───── */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.anim-reveal').forEach(el => revealObserver.observe(el));
+
+    /* ─── Contact form ──────────────────────── */
+    function submitForm() {
+      const name    = document.getElementById('field-name').value.trim();
+      const email   = document.getElementById('field-email').value.trim();
+      const subject = document.getElementById('field-subject').value.trim();
+      const message = document.getElementById('field-message').value.trim();
+
+      // Clear errors
+      ['name','email','subject','message'].forEach(f => {
+        document.getElementById('err-' + f).textContent = '';
+        document.getElementById('field-' + f).classList.remove('error');
+      });
+      document.getElementById('form-error').classList.remove('show');
+
+      // Validate
+      let valid = true;
+      if (!name) { showErr('name', 'Required'); valid = false; }
+      if (!/\S+@\S+\.\S+/.test(email)) { showErr('email', 'Email must contain @ and be valid'); valid = false; }
+      if (!subject) { showErr('subject', 'Required'); valid = false; }
+      if (!message) { showErr('message', 'Required'); valid = false; }
+      if (!valid) return;
+
+      const btn = document.getElementById('submit-btn');
+      btn.textContent = 'Sending...';
+      btn.style.opacity = '0.7';
+      btn.disabled = true;
+
+      fetch('https://formsubmit.co/ajax/rnmp.va29@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ name, email, subject, message }),
+      })
+        .then(res => {
+          if (res.ok) {
+            document.getElementById('contact-form').style.display = 'none';
+            document.getElementById('form-success').classList.add('show');
+          } else {
+            document.getElementById('form-error').classList.add('show');
+            resetBtn();
+          }
+        })
+        .catch(() => {
+          document.getElementById('form-error').classList.add('show');
+          resetBtn();
+        });
+    }
+
+    function showErr(field, msg) {
+      document.getElementById('err-' + field).textContent = msg;
+      document.getElementById('field-' + field).classList.add('error');
+    }
+
+    function resetBtn() {
+      const btn = document.getElementById('submit-btn');
+      btn.textContent = 'Send Message →';
+      btn.style.opacity = '1';
+      btn.disabled = false;
+    }
+
+    function resetForm() {
+      ['name','email','subject','message'].forEach(f => {
+        document.getElementById('field-' + f).value = '';
+      });
+      document.getElementById('contact-form').style.display = '';
+      document.getElementById('form-success').classList.remove('show');
+      resetBtn();
+    }
+  </script>
+
+</body>
+</html>

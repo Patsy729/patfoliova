@@ -1,0 +1,100 @@
+<!-- ─── CONTACT ────────────────────────────────── -->
+<section id="contact">
+  <div class="contact-glow"></div>
+  <div class="contact-top-line"></div>
+
+  <div class="contact-inner">
+
+    <!-- Left info column -->
+    <div class="contact-left anim-reveal">
+      <div class="section-label">
+        <div class="section-label-line"></div>
+        <span class="section-label-text">Get In Touch</span>
+      </div>
+      <h2 class="section-heading">
+        Ready to Work<br>
+        <em class="contact-heading-em">Together?</em>
+      </h2>
+      <p class="contact-body">
+        Let's grow your business. Whether you need organized assistance, strategic social media content, or beautiful graphics — I'm ready.
+      </p>
+
+      <!-- Email -->
+      <div class="contact-info-row">
+        <div class="contact-info-icon">✉</div>
+        <div>
+          <p class="contact-info-label">Email</p>
+          <p class="contact-info-val">rnmp.va29@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Location -->
+      <div class="contact-info-row">
+        <div class="contact-info-icon">◎</div>
+        <div>
+          <p class="contact-info-label">Location</p>
+          <p class="contact-info-val">Philippines</p>
+        </div>
+      </div>
+
+      <!-- Availability -->
+      <div class="contact-info-row">
+        <div class="contact-info-icon">◷</div>
+        <div>
+          <p class="contact-info-label">Availability</p>
+          <p class="contact-info-val">Mon – Fri</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: form -->
+    <div class="contact-right anim-reveal anim-delay-2">
+
+      <!-- Success state (hidden by default) -->
+      <div class="form-success" id="form-success">
+        <div class="form-success-bar"></div>
+        <div class="form-success-icon">✦</div>
+        <h3 class="form-success-title">Message Sent!</h3>
+        <p class="form-success-text">Thank you for reaching out. I'll get back to you within 24 hours.</p>
+        <button class="btn-gold" onclick="resetForm()">Send Another →</button>
+      </div>
+
+      <!-- Form -->
+      <form class="glass-card contact-form" id="contact-form" onsubmit="submitForm(); return false;">
+        <div class="contact-form-bar"></div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <input class="input-field" id="field-name" name="name" type="text" placeholder="Your Name">
+            <p class="field-error" id="err-name"></p>
+          </div>
+          <div class="form-field">
+            <input class="input-field" id="field-email" name="email" type="email" placeholder="Your Email">
+            <p class="field-help">Please include “@” in your email address.</p>
+            <p class="field-error" id="err-email"></p>
+          </div>
+        </div>
+
+        <p class="form-note">If you fill out this form, your message will be sent automatically to rnmp.va29@gmail.com. First-time submissions may require verifying the confirmation email in that inbox.</p>
+
+        <div class="form-field-full">
+          <input class="input-field" id="field-subject" name="subject" type="text" placeholder="Subject">
+          <p class="field-error" id="err-subject"></p>
+        </div>
+
+        <div class="form-field-msg">
+          <textarea class="input-field" id="field-message" name="message" placeholder="Your message..." rows="6" style="resize:vertical;"></textarea>
+          <p class="field-error" id="err-message"></p>
+        </div>
+
+        <input type="hidden" name="_captcha" value="false">
+        <p class="form-error" id="form-error">Something went wrong. Please email me directly.</p>
+
+        <button class="btn-gold" id="submit-btn" type="submit" style="width:100%;justify-content:center;">
+          Send Message →
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
