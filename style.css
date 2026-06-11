@@ -1527,3 +1527,376 @@ footer {
   margin: 0;
   opacity: 0.75;
 }
+ /* ─── EXPERIENCE SECTION ─────────────────────── */
+ 
+    #experience {
+      background: var(--navy);
+      padding: 7rem 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+ 
+    /* Hairline borders top & bottom — same technique as #about */
+    #experience::before,
+    #experience::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0;
+      height: 1px;
+      pointer-events: none;
+    }
+    #experience::before {
+      top: 0;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.333), transparent);
+    }
+    #experience::after {
+      bottom: 0;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent);
+    }
+ 
+    /* Ambient radial glow — same pattern as .services-bg */
+    .exp-bg-glow {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(ellipse at 50% 0%,   rgba(201,168,76,0.05) 0%, transparent 55%),
+        radial-gradient(ellipse at 50% 100%, rgba(201,168,76,0.03) 0%, transparent 55%);
+      pointer-events: none;
+    }
+ 
+    .exp-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+ 
+    /* ── Section header ─────────────────────────── */
+    .exp-header {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+    .exp-header .section-label { justify-content: center; }
+    .exp-sub {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--muted);
+      font-weight: 300;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+ 
+    /* ── Role group divider (Executive Assistant / SMM) */
+    .exp-group {
+      margin-bottom: 2.5rem;
+    }
+    .exp-group-label {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+    .exp-group-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.25), transparent);
+    }
+    .exp-group-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+ 
+    /* ══════════════════════════════════════════════
+       TIMELINE SCAFFOLD
+    ══════════════════════════════════════════════ */
+    .exp-timeline {
+      position: relative;
+    }
+ 
+    /* Vertical gold spine */
+    .exp-timeline::before {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      background: linear-gradient(
+        180deg,
+        transparent          0%,
+        rgba(201,168,76,0.4) 6%,
+        rgba(201,168,76,0.28) 88%,
+        transparent          100%
+      );
+      pointer-events: none;
+    }
+ 
+    /* ── Single timeline row ────────────────────── */
+    .exp-item {
+      display: grid;
+      /* col 1: card   col 2: spine+node   col 3: card */
+      grid-template-columns: 1fr 80px 1fr;
+      grid-template-rows: auto;
+      column-gap: 0;
+      row-gap: 0;
+      margin-bottom: 3.5rem;
+      position: relative;
+      align-items: start;
+    }
+    .exp-item:last-child { margin-bottom: 0; }
+ 
+    /* Left-side card occupies col 1, node occupies col 2, col 3 empty */
+    .exp-item--left  .exp-card-wrap { grid-column: 1; grid-row: 1; padding-right: 40px; }
+    .exp-item--left  .exp-node-wrap { grid-column: 2; grid-row: 1; }
+    .exp-item--left  .exp-date-pill { grid-column: 3; grid-row: 1; padding-left: 40px; }
+ 
+    /* Right-side: col 1 empty (date), node col 2, card col 3 */
+    .exp-item--right .exp-date-pill { grid-column: 1; grid-row: 1; padding-right: 40px; justify-self: end; text-align: right; }
+    .exp-item--right .exp-node-wrap { grid-column: 2; grid-row: 1; }
+    .exp-item--right .exp-card-wrap { grid-column: 3; grid-row: 1; padding-left: 40px; }
+ 
+    /* ── Node (gold diamond) ─────────────────────── */
+    .exp-node-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 26px; /* aligns diamond with card header text */
+    }
+    .exp-node {
+      width: 12px;
+      height: 12px;
+      background: var(--gold);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+      position: relative;
+      /* soft gold aura */
+      box-shadow:
+        0 0 0 4px rgba(201,168,76,0.1),
+        0 0 14px rgba(201,168,76,0.18);
+      transition: box-shadow 0.35s ease, transform 0.35s ease;
+    }
+    .exp-item:hover .exp-node {
+      box-shadow:
+        0 0 0 6px rgba(201,168,76,0.16),
+        0 0 22px rgba(201,168,76,0.28);
+    }
+ 
+    /* ── Date pill (desktop) ─────────────────────── */
+    .exp-date-pill {
+      padding-top: 28px; /* keep baseline aligned with node */
+    }
+    .exp-date-pill-inner {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .exp-date-period {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+    }
+    .exp-date-duration {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      color: rgba(201,168,76,0.5);
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1;
+    }
+ 
+    /* ══════════════════════════════════════════════
+       EXPERIENCE CARD
+    ══════════════════════════════════════════════ */
+    .exp-card {
+      background: var(--card);
+      border: 1px solid rgba(201,168,76,0.12);
+      padding: 1.85rem 2rem 1.75rem;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.4s cubic-bezier(0.22,1,0.36,1),
+                  transform    0.4s cubic-bezier(0.22,1,0.36,1),
+                  box-shadow   0.4s cubic-bezier(0.22,1,0.36,1);
+    }
+ 
+    /* Animated gold top bar — same pattern as .service-card::before */
+    .exp-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--goldL), transparent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.5s cubic-bezier(0.22,1,0.36,1);
+    }
+    .exp-card:hover {
+      border-color: rgba(201,168,76,0.35);
+      transform: translateY(-5px);
+      box-shadow: 0 24px 56px rgba(0,0,0,0.38);
+    }
+    .exp-card:hover::before { transform: scaleX(1); }
+ 
+    /* Card role title */
+    .exp-card-role {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: var(--ivory);
+      line-height: 1.2;
+      margin-bottom: 0.2rem;
+    }
+ 
+    /* Company name */
+    .exp-card-company {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.2rem;
+    }
+ 
+    /* Meta row: duration + location on mobile */
+    .exp-card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 0;
+    }
+    .exp-card-meta-item {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      color: var(--mutedD);
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .exp-card-meta-dot {
+      color: var(--gold);
+      font-size: 0.45rem;
+    }
+ 
+    /* Gold micro-divider inside card */
+    .exp-card .gold-divider { margin: 1rem 0 1rem; }
+ 
+    /* Description */
+    .exp-card-desc {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.875rem;
+      line-height: 1.8;
+      color: var(--muted);
+      font-weight: 300;
+      margin-bottom: 1.35rem;
+    }
+ 
+    /* Responsibilities label */
+    .exp-card-resp-title {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.62rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.8rem;
+    }
+ 
+    /* Task grid */
+    .exp-card-tasks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .exp-card-task {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.55rem;
+    }
+    .exp-card-task-dot {
+      color: var(--gold);
+      font-size: 0.48rem;
+      margin-top: 5px;
+      flex-shrink: 0;
+    }
+    .exp-card-task-text {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 0.82rem;
+      color: var(--ivoryD);
+      line-height: 1.5;
+    }
+ 
+    /* Skill tags row */
+    .exp-card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+ 
+    /* ══════════════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════════════ */
+ 
+    /* Tablet: tighten horizontal breathing room */
+    @media (max-width: 1024px) {
+      .exp-item { grid-template-columns: 1fr 60px 1fr; }
+      .exp-item--left  .exp-card-wrap { padding-right: 30px; }
+      .exp-item--right .exp-card-wrap { padding-left: 30px; }
+      .exp-item--left  .exp-date-pill { padding-left: 30px; }
+      .exp-item--right .exp-date-pill { padding-right: 30px; }
+    }
+ 
+    /* Mobile: single left-aligned timeline */
+    @media (max-width: 768px) {
+      #experience { padding: 5rem 1.5rem; }
+ 
+      /* Shift spine to left edge */
+      .exp-timeline::before {
+        left: 20px;
+        transform: none;
+      }
+ 
+      /* All items become single-column to the right of the spine */
+      .exp-item {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0;
+        margin-bottom: 3rem;
+      }
+ 
+      /* Node column — fixed narrow width aligned to spine */
+      .exp-node-wrap {
+        flex: 0 0 40px;
+        padding-top: 22px;
+        order: 1;
+      }
+ 
+      /* Card always to the right */
+      .exp-card-wrap {
+        flex: 1 1 auto;
+        padding-left: 16px !important;
+        padding-right: 0 !important;
+        order: 2;
+      }
+ 
+      /* Date pill hidden on mobile — info is inside card meta row */
+      .exp-date-pill { display: none; }
+ 
+      .exp-card-tasks { grid-template-columns: 1fr; }
+    }
+ 
+    @media (max-width: 480px) {
+      .exp-card { padding: 1.5rem 1.25rem 1.35rem; }
+    }
