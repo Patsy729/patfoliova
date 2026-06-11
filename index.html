@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ronimee Patsy Gascon | Social Media Manager · Executive Assistant</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Square portfolio cards ───────────────────────────────── */
+    .portfolio-card {
+      aspect-ratio: 1 / 1;
+      height: unset !important;
+      min-height: unset !important;
+    }
+    .portfolio-card-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    /* Ensure card is a positioned container for the absolute img */
+    .portfolio-card {
+      position: relative;
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body>
 
@@ -156,9 +177,9 @@
             Your go-to Virtual Assistant and Creative Designer for organized workflows, creative visuals, and business growth
           </p>
           <p class="about-body-text">
-            I’m a passionate Virtual Assistant and Creative Designer with a background in Information Technology, dedicated to helping businesses stay organized, efficient, and visually impactful. My journey started with a strong interest in technology and creativity, which inspired me to combine both skills into providing reliable virtual support and engaging digital solutions.
+            I'm a passionate Virtual Assistant and Creative Designer with a background in Information Technology, dedicated to helping businesses stay organized, efficient, and visually impactful. My journey started with a strong interest in technology and creativity, which inspired me to combine both skills into providing reliable virtual support and engaging digital solutions.
 
-I believe that great work comes from consistency, attention to detail, and genuine commitment. Whether it’s managing workflows, supporting daily operations, or creating creative content, I always aim to deliver results that help clients save time, stay productive, and grow confidently.
+I believe that great work comes from consistency, attention to detail, and genuine commitment. Whether it's managing workflows, supporting daily operations, or creating creative content, I always aim to deliver results that help clients save time, stay productive, and grow confidently.
 
 What drives me most is the opportunity to support businesses behind the scenes while helping them build a professional and lasting online presence.
 
@@ -471,7 +492,7 @@ What drives me most is the opportunity to support businesses behind the scenes w
         </div>
         <p class="sd-num-tag">04 / Visuals that command attention.</p>
         <h2 class="section-heading sm">Graphic Design via Canva</h2>
-        <p class="sd-body">Professional and visually engaging designs that help businesses strengthen their online presence and capture their audience’s attention. I create clean, modern, and purpose-driven graphics using Canva for social media, marketing materials, presentations, and other digital content. My goal is to deliver designs that not only look appealing but also communicate your brand message clearly, increase engagement, and leave a lasting impression on your audience.</p>
+        <p class="sd-body">Professional and visually engaging designs that help businesses strengthen their online presence and capture their audience's attention. I create clean, modern, and purpose-driven graphics using Canva for social media, marketing materials, presentations, and other digital content. My goal is to deliver designs that not only look appealing but also communicate your brand message clearly, increase engagement, and leave a lasting impression on your audience.</p>
         <div class="sd-tasks">
           <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Social media graphics</span></div>
           <div class="sd-task"><span class="sd-task-dot">◆</span><span class="sd-task-text">Posters &amp; flyers</span></div>
@@ -502,47 +523,106 @@ What drives me most is the opportunity to support businesses behind the scenes w
       </div>
 
       <div class="portfolio-grid">
+
+        <!-- ── Original 8 cards ── -->
         <div class="portfolio-card" style="background:#1A2D3F;">
           <img src="images/portfolio1.jpg" alt="Instagram Brand Kit" class="portfolio-card-img" onerror="this.style.display='none';" />
           <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
           <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
         </div>
+
         <div class="portfolio-card" style="background:#1A3428;">
           <img src="images/portfolio2.png" alt="Event Flyer Campaign" class="portfolio-card-img" onerror="this.style.display='none';" />
           <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
           <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
         </div>
+
         <div class="portfolio-card" style="background:#2A1A2E;">
           <img src="images/portfolio3.png" alt="Content Calendar Q4" class="portfolio-card-img" onerror="this.style.display='none';" />
           <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
           <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
         </div>
+
         <div class="portfolio-card" style="background:#2A2418;">
           <img src="images/portfolio4.png" alt="Monthly Report Design" class="portfolio-card-img" onerror="this.style.display='none';" />
           <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
           <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
         </div>
+
         <div class="portfolio-card" style="background:#1A2A3A;">
           <img src="images/portfolio5.png" alt="Facebook Ad Graphics" class="portfolio-card-img" onerror="this.style.display='none';" />
           <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
           <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
         </div>
+
         <div class="portfolio-card" style="background:#201E14;">
           <img src="images/portfolio6.png" alt="Business Branding Set" class="portfolio-card-img" onerror="this.style.display='none';" />
           <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
           <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
         </div>
+
         <div class="portfolio-card" style="background:#172230;">
           <img src="images/portfolio7.png" alt="Social Media Strategy" class="portfolio-card-img" onerror="this.style.display='none';" />
           <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
           <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
         </div>
+
         <div class="portfolio-card" style="background:#1E1C12;">
           <img src="images/portfolio8.png" alt="Email Campaign Design" class="portfolio-card-img" onerror="this.style.display='none';" />
           <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
           <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
         </div>
-      </div>
+
+        <!-- ── New 8 cards (9–16) ── -->
+        <div class="portfolio-card" style="background:#1A2540;">
+          <img src="images/portfolio9.png" alt="Portfolio Item 9" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+
+        <div class="portfolio-card" style="background:#1E2E1A;">
+          <img src="images/portfolio10.png" alt="Portfolio Item 10" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+
+        <div class="portfolio-card" style="background:#2E1A2A;">
+          <img src="images/portfolio11.png" alt="Portfolio Item 11" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+
+        <div class="portfolio-card" style="background:#2A2216;">
+          <img src="images/portfolio12.png" alt="Portfolio Item 12" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+
+        <div class="portfolio-card" style="background:#182838;">
+          <img src="images/portfolio13.png" alt="Portfolio Item 13" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+
+        <div class="portfolio-card" style="background:#221E10;">
+          <img src="images/portfolio14.png" alt="Portfolio Item 14" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+
+        <div class="portfolio-card" style="background:#152034;">
+          <img src="images/portfolio15.png" alt="Portfolio Item 15" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+
+        <div class="portfolio-card" style="background:#1C1A0E;">
+          <img src="images/portfolio16.png" alt="Portfolio Item 16" class="portfolio-card-img" onerror="this.style.display='none';" />
+          <div class="card-inner"><div class="portfolio-card-icon"></div><p class="portfolio-card-lbl"></p></div>
+          <div class="overlay"><span class="overlay-title"></span><span class="overlay-cat"></span></div>
+        </div>
+
+      </div><!-- /.portfolio-grid -->
 
       <div class="portfolio-footer">
         <a href="#contact" class="btn-outline" onclick="smoothScroll('contact'); return false;">Start a Project Together →</a>
@@ -827,7 +907,7 @@ What drives me most is the opportunity to support businesses behind the scenes w
       <div class="footer-top">
         <div class="footer-brand">
           <div class="footer-wordmark">Patfolio<span class="footer-wordmark-dot">&nbsp;·</span></div>
-          <p class="footer-role">Social Media Manager · General Virtual Assistant/p>
+          <p class="footer-role">Social Media Manager · General Virtual Assistant</p>
           <p class="footer-tagline">Helping businesses stay organized, grow online, and achieve real results.</p>
         </div>
         <div class="footer-nav">
